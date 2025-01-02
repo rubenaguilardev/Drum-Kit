@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+    background-color: #FEF3E2;
+    font-family: 'Agu Display', sans-serif;
+}
+
+h1 {
+    font-size: 7rem;
+    color: #FA4032;
+}
+
+button {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    font-size: 5rem;
+    border: 10px solid #FAB12F;
+    font-weight: bold;
+    color: #FA812F;
+    margin: 10px;
+}
