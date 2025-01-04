@@ -1,9 +1,11 @@
 let activeButton = document.querySelectorAll(".drum");
 
 activeButton.forEach(button => {
-    button.addEventListener('click', function () {
-        let audio = new Audio(`sounds/${this.innerText}.mp3`);
-        audio.play();
-        
-    })
+    document.addEventListener('keydown', function (event) {
+        let keyPressed = event.key
+        let audio = new Audio(`sounds/${keyPressed}.mp3`);
+            audio.play();
+   })
 })
+
+
