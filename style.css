@@ -24,29 +24,35 @@ button {
 
 
 .w {
-    background-image: url(images/crash.png);
+    background-image: url(images/w-crash.png);
 }
 
 .a {
-    background-image: url(images/tom1.png);
+    background-image: url(images/a-tom1.png);
 }
 
 .s {
-    background-image: url(images/tom3.png);
+    background-image: url(images/s-tom3.png);
 }
 
 .d {
-    background-image: url(images/kick.png);
+    background-image: url(images/d-kick.png);
 }
 
 .j {
-    background-image: url(images/tom4.png);
+    background-image: url(images/j-tom4.png);
 }
 
 .k {
-    background-image: url(images/tom2.png);
+    background-image: url(images/k-tom2.png);
 }
 
 .l {
-    background-image: url(images/snare.png);
+    background-image: url(images/l-snare.png);
 }
+
+.pressed {
+    box-shadow: 0 3px 4px 0 #BDEDF3;
+    opacity: 0.5;
+}
+
