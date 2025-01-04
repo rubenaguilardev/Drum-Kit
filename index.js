@@ -1,13 +1,25 @@
-let activeButton = document.querySelectorAll(".drum");
+let buttons = document.querySelectorAll(".drum");
 
-activeButton.forEach(button => {
-    document.addEventListener('keydown', function (event) {
-        let keyPressed = event.key
-        let audio = new Audio(`sounds/${keyPressed}.mp3`)
-        audio.play();
-        buttonAnimation(keyPressed)
-   })
+buttons.forEach(button => {
+    button.addEventListener('click', function () {
+        let buttonKey = this.innerText
+        sound(buttonKey)
+        buttonAnimation(buttonKey)
+    })
 })
+
+
+document.addEventListener('keydown', function (event) {
+    let keyPressed = event.key
+    sound(keyPressed)
+    buttonAnimation(keyPressed)
+})
+
+
+function sound(key) {
+    let audio = new Audio(`sounds/${key}.mp3`)
+    audio.play();
+}
 
 
 function buttonAnimation(key) {
@@ -16,5 +28,4 @@ function buttonAnimation(key) {
     setTimeout(function () {
         activeButton.classList.remove("pressed")
     }, 100)
-    
 }
